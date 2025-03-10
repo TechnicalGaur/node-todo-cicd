@@ -16,12 +16,7 @@ pipeline {
             }
         }
         
-        stage('Test') {
-            steps {
-                echo 'Running tests...'
-                // Yahan apni test commands likh sakte hain
-            }
-        }
+        
         
         stage('Deploy') {
             steps {
