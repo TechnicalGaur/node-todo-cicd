@@ -2,6 +2,11 @@ pipeline {
     agent any
 
     stages {
+        stage('Clone Repository'){
+            steps{
+                git'https://github.com/TechnicalGaur/node-todo-cicd.git'
+                }
+            }
         stage('Build') {
             steps {
                 echo 'Building the application...'
